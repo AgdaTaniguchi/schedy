@@ -1,0 +1,36 @@
+section.metodos-de-estudo{
+    .conteudo{
+        width: 80%;
+        padding: 40px 100px 20px 100px;
+        h2{
+            color: $corLetra;
+            &:after{
+                background-color: $corLetra;
+            }
+        }
+        h3{
+            color: $corLetra;
+            font-size: 1.3em;
+        }
+        p, ul{
+            margin: 15px 0;
+            font-size: 1.1em;
+            line-height: 1.7;
+            text-align: justify;
+            text-justify: inter-word;
+            a{
+                color: $corLetra;
+            }
+        }
+        ul{
+            margin: 20px 30px;
+            list-style-type: square;
+        }
+        .metodo{
+            margin: 25px 0 40px 0;
+        }
+        .container{
+            margin-bottom: 40px;
+        }
+    }
+}

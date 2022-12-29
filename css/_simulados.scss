@@ -1,0 +1,172 @@
+section.fazer-simulado{
+    .conteudo{
+        width: 80%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        h2{
+            color: $corLetra;
+            &:after{
+                background-color: $corLetra;
+            }
+        }
+        .container-desc {
+            p, ul{
+                margin: 25px 0;
+                font-size: 1.1em;
+                line-height: 1.7;
+                text-align: justify;
+                text-justify: inter-word;
+            }
+        }
+        section.container-grande{
+            margin-bottom: 30px;
+        }
+        .container{
+            background: #eee;
+            padding: 15px;
+            border-radius: 25px;
+        }
+        .container-novo-simulado{
+            form{
+                display: flex;
+                .box-left{
+                    width: 50%;
+                    .box-input{
+                        display: flex;
+                        align-items: center;
+                        min-height: 50px;
+                        label{
+                            margin-right: 15px;
+                            color: $corLetra;
+                        }
+                        select{
+                            width: 100%;
+                            font-size: 1em;
+                            max-width: 300px;
+                            background: #ddd;
+                            height: 35px;
+                            padding: 5px;
+                            border: none;
+                            border-radius: 5px;
+                            &:focus{
+                                outline: none;
+                                border: none;
+                            }
+                        }
+                        input[type="checkbox"]{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+                .box-right{
+                    width: 50%;
+                    display: flex;
+                    justify-content: flex-end;
+                    input[type="submit"]{
+                        width: initial;
+                        font-size: 1em;
+                        background: $corDestaque;
+                        border-radius: 25px;
+                        height: 40px;
+                        color: white;
+                        border: none;
+                        padding: 0 10px;
+                        cursor: pointer;
+                        transition-duration: 0.3s;
+                        &:hover{
+                            transition-duration: 0.3s;
+                            background: darken($corDestaque, 10);
+                        }
+                    }
+                }
+            }
+        }
+        .container-historico{
+            display: flex;
+            margin-bottom: 30px;
+            .box-left{
+                width: 50%;
+                p{
+                    height: 50px;
+                    display: flex;
+                    align-items: center;
+                    color: $corLetra;
+                    span{
+                        color: black;
+                        margin-left: 5px;
+                    }
+                }
+            }
+            .box-right{
+                width: 50%;
+                display: flex;
+                justify-content: flex-end;
+                a{
+                    margin-top: 10px;
+                    background: $corDestaque;
+                    border-radius: 25px;
+                    height: 40px;
+                    color: white;
+                    border: none;
+                    padding: 7px 10px;
+                    text-decoration: none;
+                    transition-duration: 0.3s;
+                    &:hover{
+                        transition-duration: 0.3s;
+                        background: darken($corDestaque, 5);
+                    }
+                }
+            }
+        }
+    }
+}
+
+section.simulado{
+    .conteudo{
+        width: 80%;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        p.tempo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: $corPrincipal;
+            font-size: 1.1em;
+            font-weight: bold;
+            color: white;
+            border-radius: 5px;
+            padding: 5px;
+            margin-bottom: 20px;
+            i{
+                margin-right: 10px;
+            }
+            span{
+                margin-left: 2px;
+            }
+        }
+        form{
+            #questoes{
+                text-align: justify;
+                text-justify: inter-word;
+                font-size: 1.1em;
+            }
+            .questoes_geral{
+                margin-bottom: 50px;
+                .box-alternativa{
+                    display: flex;
+                    align-items: center;
+                    margin: 15px 0;
+                    input[type="radio"]{
+                        margin: 0;
+                        width: 25px;
+                        height: 25px;
+                    }
+                    label{
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

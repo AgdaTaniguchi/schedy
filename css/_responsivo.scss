@@ -1,0 +1,179 @@
+@media screen and (max-width: 1366px){
+    section.cronograma{
+        .conteudo{
+            .selecionarDia{
+                display: block;
+            }
+            table{
+                thead{
+                    th{
+                        &:nth-child(n + 1){
+                            border-radius: 0 30px 0 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1280px){
+    section.home{
+        .banner{
+            margin-top: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    section.home{
+        .sobre-nos{
+            .conteudo{
+                flex-direction: column;
+                align-items: center;
+                img{
+                    width: 300px;
+                    height: 300px;
+                    margin-bottom: 20px;
+                }
+                p{
+                    width: 80%;
+                    max-width: 500px;
+                }
+            }
+            .custom-shape-divider-bottom-1630529250 {
+                position: relative;
+            }
+        }
+        .cards{
+            flex-direction: column;
+            align-items: center;
+            .card{
+                margin-bottom: 30px;
+                width: 60%;
+            }
+        }
+    }
+    header{
+        nav{
+            ul{
+                li{
+                    flex-grow: 0;
+                    i#menu-hamburguer{
+                        display: block;
+                    }
+                }
+                .links{
+                    margin-top: 80px;
+                    left: 0;
+                    position: absolute;
+                    width: 70%;
+                    max-width: 500px;
+                    height: calc(100vh - 80px);
+                    flex-direction: column;
+                    align-self: flex-start;
+                    justify-content: normal;
+                    background: $corPrincipal;
+                    li{
+                        display: flex;
+                        align-items: center;
+                        height: 70px;
+                        width: 100%;
+                        a{
+                            padding: 25px;
+                            text-align: center;
+                            width: 80%;
+                            margin: 0 auto;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 900px){
+    section.home{
+        .equipe{
+            .conteudo{
+                .row{
+                    flex-direction: column;
+                    padding: 0;
+                    .membro{
+                        width: 100%;
+                        h3{
+                            margin-bottom: 35px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section.login-cadastro{
+        .conteudo{
+            flex-direction: column;
+            align-items: center;
+        }
+    }
+}
+
+@media screen and (max-width: 800px){
+    form{
+        .opcoes{
+            flex-direction: column;
+        }
+    }
+    section.home{
+        .banner{
+            display: none;
+        }
+    }
+    footer{
+        .conteudo{
+            .container{
+                flex: 1 1 100%;
+                text-align: center;
+                &:nth-last-child(1){
+                    max-width: 300px;
+                    margin: 10px auto;
+                }
+                .frase{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+    section.fazer-simulado{
+        .conteudo{
+            .container-novo-simulado{
+                form{
+                    flex-direction: column;
+                    .box-left{
+                        width: 100%;
+                        .box-input{
+                            flex-wrap: wrap;
+                            label{
+                                margin-bottom: 5px;
+                                margin-top: 15px;
+                            }
+                        }
+                    }
+                    .box-right{
+                        width: 100%;
+                        justify-content: center;
+                    }
+                }
+            }
+            .container-historico{
+                flex-direction: column;
+                .box-left{
+                    width: 100%;
+                }
+                .box-right{
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

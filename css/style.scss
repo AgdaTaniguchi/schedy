@@ -1,0 +1,193 @@
+$corPrincipal: #0c72d9;
+$corLetra: darken(#0c72d9, 15);
+$corDestaque: #f2913e;
+
+@font-face{
+    font-family: "Poppins";
+    src: url("../bibliotecas/poppins/Poppins-Bold.ttf") format('truetype');
+    src: url("../bibliotecas/poppins/Poppins-Black.ttf") format('truetype');
+    src: url("../bibliotecas/poppins/Poppins-Light.ttf") format('truetype');
+    src: url("../bibliotecas/poppins/Poppins-Regular.ttf") format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    width: 100%;
+    background: $corPrincipal;
+    position: fixed;
+    z-index: 10;
+    nav{
+        max-width: 1680px;
+        margin: 0 auto;
+        ul{
+            padding: 0 50px;
+            height: 80px;
+            list-style: none;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            li{
+                flex-grow: 1;
+                font-size: 1.1em;
+                i{
+                    font-size: 1.6em;
+                    color: white;
+                    &#menu-hamburguer{
+                        cursor: pointer;
+                        display: none;
+                    }
+                }
+                img#user{
+                    width: 40px;
+                    height: 40px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                    border: 2px solid white;
+                }
+                a{
+                    #logo{
+                        height: 50px;
+                    }
+                    &#user{
+                        display: inline-flex;
+                        align-items: center;
+                        text-decoration: none;
+                        color: white;
+                        span{
+                            margin-left: 10px;
+                        }
+                    }
+                }
+            }
+            .links{
+                flex-grow: 2;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                li{
+                    a{
+                        color: white;
+                        text-decoration: none;
+                        padding: 10px;
+                        border-radius: 5px;
+                        &:hover{
+                            background-color: darken($corPrincipal, 10);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.header2{
+    height: 80px;
+}
+
+.fundo-menu{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    inset: 0;
+    z-index: 6;
+}
+
+.retorno{
+    display: none;
+    width: 100%;
+    color: white;
+    background: rgba(red, 0.8);
+    padding: 10px;
+    text-align: center;
+}
+
+.none{
+    display: none !important;
+}
+
+main{
+    width: 100%;
+    min-height: calc(100vh - 80px - 200px);
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+.conteudo{
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+footer{
+    background: $corPrincipal;
+    width: 100%;
+    min-height: 200px;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    .conteudo{
+        width: 100%;
+        max-width: 1280px;
+        margin: 0 auto;
+        font-size: 1em;
+        color: white;
+        padding: 0 10px;
+        display: flex;
+        flex-wrap: wrap;
+        .container{
+            display: flex;
+            justify-content: center;
+            margin: 10px 1%;
+            flex: 1 1 25%;
+            ul{
+                li{
+                    font-size: 1.1em;
+                    list-style-type: none;
+                    font-weight: 600;
+                    margin: 5px 0;
+                    &:nth-child(1){
+                        margin-bottom: 10px;
+                    }
+                    a{
+                        white-space: nowrap;
+                        font-size: 0.9em;
+                        font-weight: 300;
+                        text-decoration: none;
+                        color: white;
+                        i{
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+            .frase{
+                opacity: 0.6;
+                display: flex;
+                flex-direction: column;
+                p{
+                    text-align: justify;
+                    text-justify: inter-word;
+                    margin: 5px 30px;
+                }
+                i{
+                    &:nth-last-child(1){
+                        align-self: flex-end;
+                    }
+                }
+            }
+            img#logo{
+                width: 110px;
+            }
+            &:nth-child(1){
+                flex: 1 1 10%;
+            }
+        }
+    }
+}
+
+@import 'home', 'contato', 'padroes', 'cronograma', 'usuario', 'erro404', 'simulados', 'metodos', 'vestibulares', 'responsivo', 'animacoes';

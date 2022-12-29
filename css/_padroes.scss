@@ -1,0 +1,102 @@
+h1, h2{
+    font-size: 3em;
+    margin-bottom: 25px;
+    &:after{
+        content: '';
+        margin-top: 5px;
+        background: black;
+        width: 80px;
+        height: 5px;
+        display: block;
+    }
+}
+
+h2{
+    font-size: 1.7em;
+}
+
+form{
+    label{
+        font-size: 1.1em;
+        &.obg{
+            &:after{
+                content: '*';
+                margin-left: 2px;
+                color: rgb(197, 0, 0);
+            }
+        }
+    }
+    input, select, textarea{
+        margin-bottom: 15px;
+        margin-top: 5px;
+        border-radius: 5px;
+        height: 30px;
+        padding: 5px;
+        width: 100%;
+        border: 1px solid $corPrincipal;
+        outline: none;
+        font-size: 1em;
+    }
+    textarea{
+        height: 150px;
+        resize: none;
+    }
+    input[type="submit"]{
+        background: $corPrincipal;
+        font-size: 1em;
+        height: 35px;
+        color: white;
+        margin-top: 10px;
+        cursor: pointer;
+        margin-bottom: 30px;
+    }
+    span.aviso{
+        display: none;
+        background: rgba(255, 0 , 0, 0.85);
+        border-radius: 5px;
+        color: white;
+        margin-bottom: 15px;
+        padding: 5px;
+    }
+}
+
+table{
+    width: 100%;
+    text-align: center;
+    tr{
+        th{
+            font-size: 1.3em;
+            background: $corPrincipal;
+            color: white;
+            font-weight: 500;
+        }
+        td{
+            font-size: 1em;
+            font-weight: 400;
+        }
+        &:nth-child(2n + 1){
+            background: #ddd;
+        }
+        &:nth-child(2n){
+            background: #eee;
+        }
+    }
+}
+
+button{
+    min-width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 1.1em;
+    margin-top: 20px;
+    border: none;
+    background: $corPrincipal;
+    color: white;
+    &:hover{
+        cursor: pointer;
+        background: lighten($corPrincipal, 5);
+    }
+    &:active{
+        background: darken($corPrincipal, 5);
+    }
+}

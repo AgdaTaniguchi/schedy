@@ -1,0 +1,41 @@
+@keyframes esq-dir{
+    0%{
+        position: absolute;
+        left: -100%;
+    }
+    100%{
+        left: 0;
+    }
+}
+
+@keyframes dir-esq{
+    0%{
+        position: absolute;
+        left: 0;
+    }
+    100%{
+        left: -100%;
+    }
+}
+
+@keyframes esq_some{
+    0%{
+        left: 0;
+        opacity: 1;
+    }
+    100%{
+        left: -400px;
+        opacity: 0;
+    }
+}
+
+@keyframes dir_aparece{
+    0%{
+        left: -400px;
+        opacity: 0;
+    }
+    100%{
+        left: 0;
+        opacity: 1;
+    }
+}
